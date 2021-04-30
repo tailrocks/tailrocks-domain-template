@@ -39,7 +39,9 @@ allprojects {
     }
 
     tasks.withType<JavaCompile> {
-        options.release.set(javaVersion)
+        if (javaVersion >= 9) {
+            options.release.set(javaVersion)
+        }
     }
 }
 
