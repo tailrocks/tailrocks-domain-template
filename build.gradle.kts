@@ -5,9 +5,12 @@ plugins {
     id("com.diffplug.spotless") version Versions.gradleSpotlessPlugin
 }
 
+val javaVersion = 16
+
 java {
-    sourceCompatibility = JavaVersion.VERSION_16
-    targetCompatibility = JavaVersion.VERSION_16
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(javaVersion))
+    }
 }
 
 allprojects {
@@ -57,8 +60,9 @@ subprojects {
     group = "com.tailrocks.domain"
 
     java {
-        sourceCompatibility = JavaVersion.VERSION_16
-        targetCompatibility = JavaVersion.VERSION_16
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(javaVersion))
+        }
 
         withJavadocJar()
         withSourcesJar()
