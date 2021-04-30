@@ -39,7 +39,7 @@ allprojects {
     }
 
     tasks.withType<JavaCompile> {
-        options.release.set(16)
+        options.release.set(javaVersion)
     }
 }
 
