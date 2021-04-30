@@ -21,7 +21,8 @@ parameter to init-db script, this will drop existing database (if it exists) and
 The main reason why we separate jOOQ modules into one repository because the Gradle jOOQ plugin doesn't work well with 
 Gradle cache, it destroys the cache every time by generating Java classes from the database structure. By using a 
 separate repository we can improve the cache, by generating the jar package once and upload it to the Maven repository
-and reuse that module inside related Java or Kotlin microservice.
+and reuse that module inside related Java or Kotlin microservice. This speedup running the Application or a single test
+a lot.
 
 ## License
 
