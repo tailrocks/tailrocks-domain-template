@@ -42,6 +42,7 @@ allprojects {
 
 // FIXME add module name here
 val publishingProjects = setOf(
+    "tailrocks-example-flyway-migrations",
     "tailrocks-example-jooq"
 )
 
