@@ -18,6 +18,11 @@ Each `*-jooq` module contains `init-db.sh` script, which will create a new datab
 that module and apply migrations to that database. If you need to get a new clean database, you can pass `clean`
 parameter to init-db script, this will drop existing database (if it exists) and create a new one with apply migrations.
 
+The main reason why we separate jOOQ modules into one repository because the Gradle jOOQ plugin doesn't work well with 
+Gradle cache, it destroys the cache every time by generating Java classes from the database structure. By using a 
+separate repository we can improve the cache, by generating the jar package once and upload it to the Maven repository
+and reuse that module inside related Java or Kotlin microservice.
+
 ## License
 
 tailrocks-domain-template is available under the [MIT license](https://opensource.org/licenses/MIT).
