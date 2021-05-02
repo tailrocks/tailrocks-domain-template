@@ -19,6 +19,9 @@ allprojects {
 
     apply(from = "${project.rootDir}/gradle/dependencyUpdates.gradle.kts")
 
+    // FIXME replace com.tailrocks.domain with your company prefix, for example com.mycompany.domain
+    group = "com.tailrocks.domain"
+
     idea {
         module {
             isDownloadJavadoc = false
@@ -57,9 +60,6 @@ subprojects {
         apply(plugin = "java-library")
         apply(plugin = "maven-publish")
     }
-
-    // FIXME replace com.tailrocks.domain with your company prefix, for example com.mycompany.domain
-    group = "com.tailrocks.domain"
 
     java {
         toolchain {
