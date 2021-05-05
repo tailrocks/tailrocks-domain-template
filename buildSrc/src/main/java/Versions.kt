@@ -2,7 +2,7 @@ object Versions {
 
     // Languages
 
-    const val kotlin = "1.4.32"
+    const val kotlin = "1.5.0"
 
     // Gradle plugins
 
