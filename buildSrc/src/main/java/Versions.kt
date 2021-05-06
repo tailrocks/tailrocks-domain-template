@@ -18,7 +18,7 @@ object Versions {
     // Libraries
 
     // sync with Micronaut's BOM:
-    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/2.5.0/micronaut-bom-2.5.0.pom
+    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/2.5.1/micronaut-bom-2.5.1.pom
     // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-jooq/3.4.0/micronaut-jooq-3.4.0.pom
     const val postgresql = "42.2.18"
     const val flyway = "7.7.3"
