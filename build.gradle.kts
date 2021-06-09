@@ -48,18 +48,8 @@ allprojects {
     }
 }
 
-// FIXME add module name here
-val publishingProjects = setOf(
-    "tailrocks-example-flyway-migrations",
-    "tailrocks-example-jooq"
-)
-
 subprojects {
     apply(plugin = "java")
-    if (publishingProjects.contains(project.name)) {
-        apply(plugin = "java-library")
-        apply(plugin = "maven-publish")
-    }
 
     java {
         toolchain {
@@ -70,7 +60,7 @@ subprojects {
         withSourcesJar()
     }
 
-    if (publishingProjects.contains(project.name)) {
+    plugins.withId("maven-publish") {
         publishing {
             publications {
                 create<MavenPublication>("mavenJava") {

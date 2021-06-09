@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    `maven-publish`
     id("org.flywaydb.flyway") version Versions.flyway
     id("nu.studer.jooq") version Versions.gradleJooqPlugin
 }
