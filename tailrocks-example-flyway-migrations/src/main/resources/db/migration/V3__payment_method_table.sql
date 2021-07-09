@@ -6,7 +6,7 @@ CREATE TABLE payment_method (
     last_modified_date   TIMESTAMP WITHOUT TIME ZONE DEFAULT now() NOT NULL,
     version              BIGINT                      DEFAULT 0     NOT NULL,
 
-    account_id           BIGINT                                    NOT NULL,
+    account_id           CHAR(25)                                  NOT NULL,
     card_brand           PAYMENT_METHOD_CARD_BRAND,
     card_expiration_date DATE,
     card_number          CHARACTER VARYING(255),
