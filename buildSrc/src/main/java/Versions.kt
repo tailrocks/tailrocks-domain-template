@@ -10,7 +10,7 @@ object Versions {
     const val gradleVersionsPlugin = "0.39.0"
 
     // https://plugins.gradle.org/plugin/com.diffplug.spotless
-    const val gradleSpotlessPlugin = "5.14.1"
+    const val gradleSpotlessPlugin = "5.14.2"
 
     // https://plugins.gradle.org/plugin/nu.studer.jooq
     const val gradleJooqPlugin = "6.0"
