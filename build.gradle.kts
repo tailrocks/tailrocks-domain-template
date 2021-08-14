@@ -17,7 +17,7 @@ allprojects {
     apply(plugin = "idea")
     apply(plugin = "com.diffplug.spotless")
 
-    apply(from = "${project.rootDir}/gradle/dependencyUpdates.gradle.kts")
+    apply(plugin = "dependency-updates-conventions")
 
     // FIXME replace com.tailrocks.domain with your company prefix, for example com.mycompany.domain
     group = "com.tailrocks.domain"

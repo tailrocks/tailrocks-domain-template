@@ -102,7 +102,8 @@ tasks {
     flywayMigrate {
         dependsOn("processResources")
     }
-    "generateJooq" {
+    named<nu.studer.gradle.jooq.JooqGenerate>("generateJooq") {
+        allInputsDeclared.set(true)
         dependsOn("flywayMigrate")
     }
     processResources {
