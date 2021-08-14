@@ -2,7 +2,7 @@ object Versions {
 
     // Languages
 
-    const val kotlin = "1.5.20"
+    const val kotlin = "1.5.21"
 
     // Gradle plugins
 
@@ -17,13 +17,13 @@ object Versions {
 
     // Libraries
 
-    // sync with Micronaut's BOM:
-    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/2.5.8/micronaut-bom-2.5.8.pom
-    // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-jooq/3.4.0/micronaut-jooq-3.4.0.pom
-    const val postgresql = "42.2.18"
-    const val flyway = "7.7.3"
-    const val jooq = "3.14.4"
+    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/3.0.0-RC1/micronaut-bom-3.0.0-RC1.pom
     const val spotbugs = "4.0.3"
+    const val flyway = "7.12.1"
+
+    // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0-RC4/micronaut-sql-bom-4.0.0-RC4.pom
+    const val postgresql = "42.2.23"
+    const val jooq = "3.14.12"
 
     // Project
 

@@ -10,11 +10,10 @@ export PSQL_USERNAME="postgres"
 # FIXME replace table name tailrocks_example_dev with correct project name, for example tailrocks_payment_dev
 export DATABASE_NAME="tailrocks_example_dev"
 export DATASOURCE_URL="jdbc:postgresql://127.0.0.1:19001/${DATABASE_NAME}"
-export POSTGRESQL_CONTAINER_NAME="tailrocks-postgresql"
 
 export GRADLEW_CMD="../gradlew"
-export PSQL_CMD="docker exec -ti ${POSTGRESQL_CONTAINER_NAME} psql"
-export DROPDB_CMD="docker exec -ti ${POSTGRESQL_CONTAINER_NAME} dropdb"
+export PSQL_CMD="kubectl exec -ti postgresql-0 -n postgresql -- psql"
+export DROPDB_CMD="kubectl exec -ti postgresql-0 -n postgresql -- dropdb"
 # @end config
 
 printf "\n# \e[93mPreparing ${DATABASE_NAME} database\e[0m\n\n"
