@@ -17,11 +17,11 @@ object Versions {
 
     // Libraries
 
-    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/3.0.0-RC1/micronaut-bom-3.0.0-RC1.pom
+    // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/3.0.0/micronaut-bom-3.0.0.pom
     const val spotbugs = "4.0.3"
     const val flyway = "7.12.1"
 
-    // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0-RC4/micronaut-sql-bom-4.0.0-RC4.pom
+    // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0/micronaut-sql-bom-4.0.0.pom
     const val postgresql = "42.2.23"
     const val jooq = "3.14.12"
 
