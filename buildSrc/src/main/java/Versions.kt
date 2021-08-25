@@ -6,9 +6,6 @@ object Versions {
 
     // Gradle plugins
 
-    // https://plugins.gradle.org/plugin/com.github.ben-manes.versions
-    const val gradleVersionsPlugin = "0.39.0"
-
     // https://plugins.gradle.org/plugin/com.diffplug.spotless
     const val gradleSpotlessPlugin = "5.14.2"
 

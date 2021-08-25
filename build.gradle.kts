@@ -2,7 +2,7 @@ plugins {
     java
     idea
     `maven-publish`
-    id("com.diffplug.spotless") version Versions.gradleSpotlessPlugin
+    id("com.diffplug.spotless")
 }
 
 val javaVersion = 16
@@ -15,9 +15,9 @@ java {
 
 allprojects {
     apply(plugin = "idea")
-    apply(plugin = "com.diffplug.spotless")
 
     apply(plugin = "dependency-updates-conventions")
+    apply(plugin = "spotless-conventions")
 
     // FIXME replace com.tailrocks.domain with your company prefix, for example com.mycompany.domain
     group = "com.tailrocks.domain"
@@ -26,24 +26,6 @@ allprojects {
         module {
             isDownloadJavadoc = false
             isDownloadSources = false
-        }
-    }
-
-    spotless {
-        java {
-            removeUnusedImports()
-            trimTrailingWhitespace()
-            endWithNewline()
-            targetExclude("**/generated/**")
-        }
-        kotlinGradle {
-            ktlint()
-        }
-    }
-
-    tasks.withType<JavaCompile> {
-        if (javaVersion >= 9) {
-            options.release.set(javaVersion)
         }
     }
 }
@@ -58,20 +40,5 @@ subprojects {
 
         withJavadocJar()
         withSourcesJar()
-    }
-
-    plugins.withId("maven-publish") {
-        publishing {
-            publications {
-                create<MavenPublication>("mavenJava") {
-                    from(components["java"])
-                    versionMapping {
-                        allVariants {
-                            fromResolutionResult()
-                        }
-                    }
-                }
-            }
-        }
     }
 }
