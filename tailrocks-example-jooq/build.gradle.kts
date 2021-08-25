@@ -1,5 +1,5 @@
 plugins {
-    id("publishing-conventions")
+    id("maven-publish-conventions")
     id("org.flywaydb.flyway") version Versions.flyway
     id("nu.studer.jooq") version Versions.gradleJooqPlugin
 }

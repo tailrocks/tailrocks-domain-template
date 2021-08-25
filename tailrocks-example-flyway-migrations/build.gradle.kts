@@ -1,5 +1,5 @@
 plugins {
-    id("publishing-conventions")
+    id("maven-publish-conventions")
 }
 
 version = Versions.tailrocksExample

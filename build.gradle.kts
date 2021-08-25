@@ -12,8 +12,8 @@ java {
 
 allprojects {
     apply(plugin = "idea-conventions")
-    apply(plugin = "dependency-updates-conventions")
     apply(plugin = "spotless-conventions")
+    apply(plugin = "versions-conventions")
 
     // FIXME replace com.tailrocks.domain with your company prefix, for example com.mycompany.domain
     group = "com.tailrocks.domain"
