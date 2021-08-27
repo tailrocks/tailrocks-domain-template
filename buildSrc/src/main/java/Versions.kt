@@ -6,9 +6,6 @@ object Versions {
 
     // Gradle plugins
 
-    // https://plugins.gradle.org/plugin/com.diffplug.spotless
-    const val gradleSpotlessPlugin = "5.14.2"
-
     // https://plugins.gradle.org/plugin/nu.studer.jooq
     const val gradleJooqPlugin = "6.0"
 
