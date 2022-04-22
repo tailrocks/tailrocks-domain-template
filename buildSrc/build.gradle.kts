@@ -6,5 +6,5 @@ plugins {
 
 dependencies {
     implementation("com.github.ben-manes:gradle-versions-plugin:0.42.0")
-    implementation("com.diffplug.spotless:spotless-plugin-gradle:6.4.2")
+    implementation("com.diffplug.spotless:spotless-plugin-gradle:6.5.0")
 }
