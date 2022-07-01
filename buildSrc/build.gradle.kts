@@ -1,7 +1,7 @@
 plugins {
     `kotlin-dsl`
     id("com.github.ben-manes.versions") version "0.42.0"
-    id("com.diffplug.spotless") version "6.7.2"
+    id("com.diffplug.spotless") version "6.8.0"
 }
 
 dependencies {
