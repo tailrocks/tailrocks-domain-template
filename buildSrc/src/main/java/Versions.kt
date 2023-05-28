@@ -13,7 +13,7 @@ object Versions {
 
     // https://repo1.maven.org/maven2/io/micronaut/micronaut-bom/3.0.0/micronaut-bom-3.0.0.pom
     const val spotbugs = "4.0.3"
-    const val flyway = "7.12.1"
+    const val flyway = "7.15.0"
 
     // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0/micronaut-sql-bom-4.0.0.pom
     const val postgresql = "42.2.23"
