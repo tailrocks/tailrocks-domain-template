@@ -7,7 +7,7 @@ object Versions {
     // Gradle plugins
 
     // https://plugins.gradle.org/plugin/nu.studer.jooq
-    const val gradleJooqPlugin = "6.0"
+    const val gradleJooqPlugin = "6.0.1"
 
     // Libraries
 
