@@ -17,7 +17,7 @@ object Versions {
 
     // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0/micronaut-sql-bom-4.0.0.pom
     const val postgresql = "42.2.23"
-    const val jooq = "3.14.12"
+    const val jooq = "3.18.7"
 
     // Project
 
