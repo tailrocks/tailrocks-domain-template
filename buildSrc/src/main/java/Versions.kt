@@ -16,7 +16,7 @@ object Versions {
     const val flyway = "7.12.1"
 
     // https://repo1.maven.org/maven2/io/micronaut/sql/micronaut-sql-bom/4.0.0/micronaut-sql-bom-4.0.0.pom
-    const val postgresql = "42.2.23"
+    const val postgresql = "42.7.0"
     const val jooq = "3.14.12"
 
     // Project
